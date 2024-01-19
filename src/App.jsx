@@ -6,7 +6,7 @@ import Account from './assets/components/account/Account'
 function App() {
   
   const [obj, setObj] = useState({
-    entry: 0,
+    entry: 0
   })
 
   const [account, setAccount] = useState(0)

@@ -1,6 +1,4 @@
 const Account = ({obj, setObj, account, setAccount}) => {
-    console.log(typeof account);
-    
     
     const depositFunc = () => {
         let accountNum = Number(account)
