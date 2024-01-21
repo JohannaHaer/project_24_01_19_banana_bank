@@ -1,3 +1,5 @@
+import "./account.css"
+
 const Account = ({obj, setObj}) => {
 
     const depositFunc = () => {
@@ -31,7 +33,7 @@ const Account = ({obj, setObj}) => {
     return (
         <>
             <p>{obj.account} €</p>
-            <div>
+            <div className="input">
                 <input 
                 type="number" 
                 id = "input"
@@ -39,8 +41,10 @@ const Account = ({obj, setObj}) => {
                 value = {obj.entry}
                 onChange={(event) => setObj({...obj, entry: event.target.value})}
                 />
-                <button onClick={depositFunc}>Einzahlen</button>
-                <button onClick={payOutFunc}>Auszahlen</button>
+                <div className="buttons">
+                    <button onClick={depositFunc}>Einzahlen</button>
+                    <button onClick={payOutFunc}>Auszahlen</button>
+                </div>
             </div>
 
         </>
